@@ -1,0 +1,38 @@
+# Please see https://docs.antora.org/antora/2.3/standard-directories/
+# and https://docs.antora.org/antora/2.3/component-version-descriptor/
+# for more details
+
+#=================================
+# Mandatory keys
+#=================================
+
+# Component name used with version to identify a component version. Used as the component coordinate in page and resource IDs and in the component URL segment for a component version’s published pages.
+# The value can contain letters, numbers, underscores (_), hyphens (-), and periods (.). The value cannot contain a space, a forward slash (/), or HTML special characters (&, <, or >). The value cannot be empty. To ensure portability between host platforms, letters used in the name value should be lowercase.
+name: test
+
+# Version identifier used with name to identify a component version. Used as the version coordinate in page and resource IDs and, with the exception of the reserved value master, in the version URL segment for a component version’s published pages.
+# Values that start with a number should be enclosed in a set of single quote marks (').
+version: '1.0' 
+
+#=================================
+# Optional keys
+#=================================
+
+# Component name used for sorting and presentation purposes only in the reference UI’s component version page menu, component version selector, and page breadcrumbs. Accepts empty spaces, uppercase letters, and a broad range of characters (e.g., API Manager).
+title: Test
+
+# Version identifier used for presentation purposes only in the reference UI’s component version selector and page version selector. display_version accepts empty spaces, uppercase letters, and most characters (e.g., 3.0 Beta, RED WREN!).
+# If the value starts with a number, enclose it in a set of single quote marks (').
+display_version: '1.0 Early Alpha'
+
+# The asciidoc key accepts the attributes key and its nested list of key-value pairs. The key-value pairs listed under attributes represent built-in and user-defined AsciiDoc attributes (e.g., idseparator: '-') and page attributes. Attributes in antora.yml are applied to all of the pages and resources (where applicable) that belong to a component version.
+asciidoc.attributes: 
+
+# Accepts a list of navigation files. Navigation files (e.g., nav.adoc) that are registered under the nav key are used in the component version’s page menu.
+nav: 
+
+# Designates a component version as a prerelease version and disables the default routing rules. Key can append a prerelease identifier (e.g., -alpha.2) to version without affecting the version coordinate or version URL segment.
+prerelease:
+
+# Specifies a page as the component version’s home page. By default, Antora uses index.adoc in a component version’s ROOT module.
+start_page:

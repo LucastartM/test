@@ -1,0 +1,14 @@
+# Example from https://www.matthewsetter.com/antora/three-core-concepts/
+# More details can be found here https://docs.antora.org/antora/2.3/playbook/
+site:
+  title: Test
+  start_page: synapse::index.adoc 
+content:
+  sources:
+  - url: https://github.com/LucastartM/test.git
+    branches: ['*']
+
+ui:
+  bundle:
+    url: https://github.com/LucastartM/test.git
+    snapshot: true
